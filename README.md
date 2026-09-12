@@ -57,3 +57,7 @@ key1=value1;key2=value2;...\n
 - All rights to the source code and design of this project belong to BoundaryX.
 - Web: boundaryx.io
 - Contact: https://boundaryx.io/contact
+
+## Guide and Support
+
+Open the header help button or expand **사용 가이드 및 지원** for a nine-step walkthrough, example code and troubleshooting. See [Support](SUPPORT.md) for recording and export behavior. No Node.js installation is required to use the deployed app.
