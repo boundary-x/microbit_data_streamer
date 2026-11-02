@@ -117,3 +117,14 @@ body.guide-active::after { content:''; height:60vh; flex-shrink:0; }
 .packet-example{white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;background:#111;color:#fff;border-radius:8px;line-height:1.8}
 .sensor-token-list button:focus-visible,.device-example-links a:focus-visible{outline:3px solid #3778d4;outline-offset:3px}
 @media(max-width:480px){.format-rules{grid-template-columns:1fr}.format-rules>div{display:flex;align-items:center;gap:12px;text-align:left}.format-rules code{margin:0;min-width:32px}#support-card .device-example-card{padding:16px}}
+
+/* Linked packet preview: selection uses background and weight, not color alone. */
+#support-card .packet-title{font-weight:700;margin:0 0 10px}
+#support-card .packet-title span{font-size:12px;font-weight:400;color:#69737e;margin-left:8px}
+#support-card .packet-preview{margin-bottom:16px}
+#support-card .packet-example{margin:0;line-height:2.2}
+#support-card .packet-example code{background:transparent;color:inherit;padding:0;font-size:14px}
+#support-card .packet-example [data-packet-sensor]{display:inline-block;border-radius:4px;padding:0 3px}
+#support-card .packet-example .is-highlighted{background:#ffe37b;color:#111;font-weight:700;box-shadow:0 0 0 1px #ffe37b}
+#support-card .packet-newline{color:#b8c3d0}
+#support-card .packet-hint{font-size:13px;color:#69737e;line-height:1.6}
