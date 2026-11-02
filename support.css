@@ -93,3 +93,27 @@ body.guide-active::after { content:''; height:60vh; flex-shrink:0; }
 .calibration-video figcaption{font-weight:600;font-size:14px;margin-bottom:10px}
 .calibration-video video{display:block;width:100%;max-width:560px;aspect-ratio:16/9;object-fit:contain;background:#111;border-radius:10px}
 #support-card .calibration-video a{display:inline-block;margin-top:8px;font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+
+/* Consistent example cards and interactive data guide. */
+#support-card .device-prepare{padding:18px;background:#f0f2f4;border-radius:12px;margin-bottom:16px}
+#support-card .device-example-card{background:#fff;border:1px solid #d3d7dc;border-radius:16px;padding:20px;margin:16px 0}
+#support-card .device-example-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+#support-card .device-example-heading h4{margin:0;font-size:17px}
+#support-card .device-tag{display:inline-block;background:#f0f2f4;color:#626b75;padding:5px 8px;border-radius:5px;font-size:12px}
+#support-card .device-example-links a{display:block;background:#111;color:#fff;border-radius:10px;padding:16px;text-decoration:none;font-weight:700}
+#support-card .device-note{font-size:13px;color:#69737e}
+.sensor-token-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+.sensor-token-list button{padding:12px;border:1px solid #d3d7dc;border-radius:12px;background:#fff;color:#222;text-align:left;cursor:pointer}
+.sensor-token-list small{display:block;margin-bottom:6px}
+.sensor-token-list button[aria-pressed="true"]{background:#111;color:#fff;border-color:#111}
+#support-card .sensor-token-list code{background:transparent;color:inherit;padding:0}
+.sensor-explanation{padding:16px;border-radius:12px;background:#edf3f8;min-height:54px}
+.format-rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.format-rules>div{padding:12px;background:#fff;border:1px solid #ddd;border-radius:10px;text-align:center}
+.format-rules code{font-size:20px;font-weight:700;display:block;margin-bottom:8px}
+.format-rules span{font-size:13px}
+.format-detail{margin-top:12px;padding:14px;border:1px solid #ddd;border-radius:12px;background:#fff}
+.format-detail summary{cursor:pointer;font-weight:600;min-height:28px}
+.packet-example{white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;background:#111;color:#fff;border-radius:8px;line-height:1.8}
+.sensor-token-list button:focus-visible,.device-example-links a:focus-visible{outline:3px solid #3778d4;outline-offset:3px}
+@media(max-width:480px){.format-rules{grid-template-columns:1fr}.format-rules>div{display:flex;align-items:center;gap:12px;text-align:left}.format-rules code{margin:0;min-width:32px}#support-card .device-example-card{padding:16px}}
